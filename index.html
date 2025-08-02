@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haura Portofolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#headquarter">Headquarter</a>
+        <a href="#message">Message Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 id="welcome-text">Hi, Welcome To Website</h1>
+        <p>Selamat datang di website portofolio sederhana Haura!</p>
+        <img src="banner.jpeg" alt="Company Banner" />
+      </div>
+    </section>
+
+    <section id="headquarter" class="section">
+      <div class="container">
+        <h3>Our Headquarter</h3>
+        <div class="headquarters">
+          <div class="circle">Jakarta</div>
+          <div class="circle">Bandung</div>
+          <div class="circle">Surabaya</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="message">
+      <div class="container">
+        <h2>Message Us</h2>
+        <form id="contactForm">
+          <label for="nameInput">Nama:</label>
+          <input type="text" id="nameInput" required />
+
+          <label for="birthdate">Tanggal Lahir:</label>
+          <input type="date" id="birthdate" required />
+
+          <label>Jenis Kelamin:</label>
+          <label><input type="radio" name="gender" value="Laki-laki" required /> Laki-laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" required /> Perempuan</label>
+
+          <label for="messageText">Pesan:</label>
+          <textarea id="messageText" rows="4" required></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+
+        <pre id="formOutput" style="margin-top: 2rem;"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Haura. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
